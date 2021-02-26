@@ -4,19 +4,23 @@
   min-height: 100vh;
   display: flex;
   flex: 1;
-  flex-direction: column;
   background-image: url(./images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.Container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  padding: 2rem;
+}
+
 .App-logo {
   width: 50%;
   height: 50%;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
 }
 
 .App-logo .logo {
@@ -27,6 +31,15 @@
   filter: drop-shadow(2px 2px 2px black);
 }
 
+.App-button {
+  margin-top: 2rem;
+  height: 4rem;
+}
+
+.App-button button {
+  height: 100%;
+  text-transform: uppercase;
+}
 /* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -4,12 +4,14 @@ import logo from "./images/logo.png";
 function App() {
   return (
     <div className="App">
-      <div className="App-logo">
-        <img src={logo} alt="logo" className="logo" />
+      <div className="Container">
+        <div className="App-logo">
+          <img src={logo} alt="logo" className="logo" />
+        </div>
+        <div className="App-button">
+          <button>Acompanhar o Alvômetro</button>
+        </div>
       </div>
-      {/* <div className="App-button">
-        <button>Ver o Progresso</button>
-      </div> */}
     </div>
   );
 }
