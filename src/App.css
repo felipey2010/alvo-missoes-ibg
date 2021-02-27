@@ -32,14 +32,46 @@
 }
 
 .App-button {
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   height: 4rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .App-button button {
   height: 100%;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   text-transform: uppercase;
+  color: white;
+  background-color: #bd2c21;
+  border: 1px solid #0c0c0c8c;
+  box-shadow: 2px 2px 2px #000000b8;
+  cursor: pointer;
 }
+
+.App-button button:hover {
+  background-color: #801a1a;
+  border: 1px solid #0c0c0c8c;
+  transition: 0.1s ease-in;
+}
+
+.App-button button:focus {
+  border: 1px solid #0c0c0c8c;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-button button {
+    height: 100%;
+    width: fit-content;
+    white-space: nowrap;
+  }
+}
+
 /* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
