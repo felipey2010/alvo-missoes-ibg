@@ -64,6 +64,17 @@
   outline: none;
 }
 
+.progressBar {
+  width: 50%;
+  height: 100px;
+  margin-left: 2.4rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
   .App-button button {
     height: 100%;
