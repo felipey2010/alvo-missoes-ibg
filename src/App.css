@@ -81,6 +81,9 @@
     width: fit-content;
     white-space: nowrap;
   }
+  .App-button {
+    margin-left: 1.2rem;
+  }
 }
 
 /* 
