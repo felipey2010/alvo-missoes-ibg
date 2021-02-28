@@ -4,14 +4,14 @@ import logo from "./images/logo.png";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 import Progress from "./components/progress";
+import { Animated } from "./components/animation/shakingAnimation";
 
 function App() {
   const [progressVisible, setProgressVisible] = useState(false);
-  const [percentage, setPercentage] = useState(50);
+  const [percentage, setPercentage] = useState(25);
 
   function setProgress() {
     setProgressVisible(!progressVisible);
-    console.log("Visibility: " + progressVisible);
   }
 
   return (
@@ -23,9 +23,11 @@ function App() {
           </div>
         </Slide>
         <Fade left>
-          <div className="App-button">
-            <button onClick={() => setProgress()}>Mostrar o Alvômetro</button>
-          </div>
+          <Animated>
+            <div className="App-button">
+              <button onClick={() => setProgress()}>Mostrar o Alvômetro</button>
+            </div>
+          </Animated>
         </Fade>
         {progressVisible && (
           <Fade bottom>

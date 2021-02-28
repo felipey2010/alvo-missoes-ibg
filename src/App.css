@@ -8,6 +8,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -moz-box-shadow: inset 0px 0px 45px 13px rgba(70, 69, 69, 1);
+  -webkit-box-shadow: inset 0px 0px 45px 13px rgba(70, 69, 69, 1);
+  box-shadow: inset 0px 0px 45px 13px rgba(70, 69, 69, 1);
 }
 
 .Container {
@@ -51,12 +54,15 @@
   border: 1px solid #0c0c0c8c;
   box-shadow: 2px 2px 2px #000000b8;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .App-button button:hover {
   background-color: #801a1a;
   border: 1px solid #0c0c0c8c;
   transition: 0.1s ease-in;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .App-button button:focus {
@@ -67,7 +73,7 @@
 .progressBar {
   width: 50%;
   height: 100px;
-  margin-left: 2.4rem;
+  margin-left: 1.2rem;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -75,11 +81,25 @@
   align-items: center;
 }
 
+.progressBar h1 {
+  margin-bottom: 0px;
+  white-space: nowrap;
+  font-size: 34px;
+  font-weight: 800;
+}
+
 @media only screen and (max-width: 600px) {
   .App-button button {
     height: 100%;
     width: fit-content;
     white-space: nowrap;
+  }
+  .App-button {
+    margin-left: 1.2rem;
+  }
+  .progressBar {
+    margin-left: 0;
+    width: 75%;
   }
 }
 

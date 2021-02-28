@@ -7,9 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   height: 100vh;
+
+  /* background-image: url(./images/bg.jpg); */
+  background-position: center;
+  background-size: contain;
   box-sizing: border-box;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 code {
