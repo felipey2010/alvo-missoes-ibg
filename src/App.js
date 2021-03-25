@@ -22,13 +22,17 @@ function App() {
             <img src={logo} alt="logo" className="logo" />
           </div>
         </Slide>
-        <Fade left>
-          <Animated>
-            <div className="App-button">
-              <button onClick={() => setProgress()}>Mostrar o Alvômetro</button>
-            </div>
-          </Animated>
-        </Fade>
+        {progressVisible === false && (
+          <Fade left>
+            <Animated>
+              <div className="App-button">
+                <button onClick={() => setProgress()}>
+                  Mostrar o Alvômetro
+                </button>
+              </div>
+            </Animated>
+          </Fade>
+        )}
         {progressVisible && (
           <Fade bottom>
             <div className="progressBar">
