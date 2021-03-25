@@ -3,7 +3,6 @@
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex: 1;
   background-image: url(./images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -16,35 +15,34 @@
 .Container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   width: auto;
   padding: 2rem;
 }
 
 .App-logo {
-  width: 50%;
-  height: 50%;
+  width: 50vw;
+  height: 50vh;
 }
 
 .App-logo .logo {
   display: flex;
-  flex: 1;
   width: 100%;
   height: 100%;
   filter: drop-shadow(1px 2px 0px black);
 }
 
 .App-button {
-  margin-top: 2.4rem;
-  height: 4rem;
-  width: 50%;
+  margin-top: 8vh;
+  height: 15vh;
+  width: auto;
   display: flex;
   justify-content: center;
 }
 
 .App-button button {
   height: 100%;
-  width: 50%;
+  width: fit-content;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -55,6 +53,7 @@
   box-shadow: 1px 1px 1px #000000b8;
   cursor: pointer;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
 .App-button button:hover {
@@ -71,8 +70,8 @@
 }
 
 .progressBar {
-  width: 50%;
-  height: 100px;
+  width: 50vw;
+  height: 12vh;
   margin-left: 1.2rem;
   margin-top: 1rem;
   display: flex;
@@ -87,7 +86,7 @@
   font-size: 34px;
   font-weight: 800;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
   .App-button button {
     height: 100%;
@@ -102,7 +101,7 @@
     margin-left: 1.2rem;
     width: 85%;
   }
-}
+} */
 
 /* 
 @media (prefers-reduced-motion: no-preference) {
