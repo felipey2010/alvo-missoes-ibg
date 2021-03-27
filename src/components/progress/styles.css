@@ -2,7 +2,7 @@
   background-color: #fff5f5;
   border-radius: 20px;
   position: relative;
-  margin: 15px 0;
+  margin: 10px 0;
   height: 100%;
   width: 100%;
 }
@@ -19,6 +19,7 @@
   width: 0;
   opacity: 0;
   transition: width ease-in-out 0.1s;
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: 25px;
   font-weight: 900;
 }

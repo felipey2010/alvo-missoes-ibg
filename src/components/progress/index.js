@@ -6,6 +6,7 @@ export default function Progress({ percentage }) {
   const [count, setCount] = useState(0);
   const firstVal = percentage - Math.floor(percentage * 0.4);
   const secondVal = percentage - Math.floor(percentage * 0.1);
+  const finalVal = "12,88%";
 
   useEffect(() => {
     //speed the counting till Percentage - 10
@@ -42,9 +43,15 @@ export default function Progress({ percentage }) {
 
   return (
     <div className="progress">
-      <div className="progress-done" style={style}>
-        {count}%
-      </div>
+      {count === percentage ? (
+        <div className="progress-done" style={style}>
+          {finalVal}
+        </div>
+      ) : (
+        <div className="progress-done" style={style}>
+          {count}%
+        </div>
+      )}
     </div>
   );
 }

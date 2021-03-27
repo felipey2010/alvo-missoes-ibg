@@ -8,7 +8,7 @@ import { Animated } from "./components/animation/shakingAnimation";
 
 function App() {
   const [progressVisible, setProgressVisible] = useState(false);
-  const [percentage, setPercentage] = useState(30);
+  const [percentage, setPercentage] = useState(13);
 
   function setProgress() {
     setProgressVisible(!progressVisible);
