@@ -6,7 +6,8 @@ export default function Progress({ percentage }) {
   const [count, setCount] = useState(0);
   const firstVal = percentage - Math.floor(percentage * 0.4);
   const secondVal = percentage - Math.floor(percentage * 0.1);
-  const finalVal = "12,88%";
+  // Had problems showing decimals so the text below shows when the percentage gets to what has been set
+  const finalVal = "72,45%";
 
   useEffect(() => {
     //speed the counting till Percentage - 10
