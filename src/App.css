@@ -60,8 +60,8 @@
   background-color: #801a1a;
   border: 1px solid #0c0c0c8c;
   transition: 0.1s ease-in;
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+  /* transform: scale(1.05); */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .App-button button:focus {
@@ -85,6 +85,7 @@
   white-space: nowrap;
   font-size: 34px;
   font-weight: 800;
+  color: #bc1606;
 }
 /* 
 @media only screen and (max-width: 600px) {
