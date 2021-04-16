@@ -20,6 +20,50 @@
   opacity: 0;
   transition: width ease-in-out 0.1s;
   /* font-size: 35px; */
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 900;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.progress-done-2 {
+  background: linear-gradient(to left, #01e012, #256704);
+  box-shadow: 0 3px 3px -5px #bd2d21, 0 2px 5px #f7bfd2;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: width ease-in-out 0.1s;
+  /* font-size: 35px; */
+  font-size: 35px;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.progress-text {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: width ease-in-out 0.1s;
+  font-size: 35px;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
 }
